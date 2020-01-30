@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class TestService {
+public class NameService {
 
     @Cacheable(value = "cache_names", key = "#prefix")
     public List<String> findNames(String prefix) {

@@ -11,11 +11,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 @AllArgsConstructor
-public class TestResource {
-    private final TestService testService;
+public class NameResource {
+    private final NameService nameService;
 
     @GetMapping("/names/{prefix}")
     public List<String> getName(@PathVariable String prefix) {
-       return testService.findNames(prefix);
+       return nameService.findNames(prefix);
     }
 }
